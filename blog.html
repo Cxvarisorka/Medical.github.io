@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <script src="https://kit.fontawesome.com/ddac99b4fd.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        button{
+            border: none;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            background-color: #11141B;
+            width: 100%;
+            height: 600px;
+        }
+        #specc{
+            font-size: 40px;
+            font-weight: 700;
+        }
+        #medi{
+            font-size: 35px;
+            font-weight: 500;
+            margin-left: 100px;
+            display: inline-block;
+            cursor: pointer;
+            font-weight: 700;
+            transition: all 0.15s;
+            color: white;
+        }
+        #medi:hover{
+            color: #1966F3;
+        }
+        .logo,.about{
+            width: 300px;
+            height: 290px;
+        }
+        .about{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            line-height: 30px;
+        }
+        .about p{
+            color: #BDBDBD;
+        }
+        #kk{
+            color: white;
+        }
+        #fm{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .fm-flex{
+            display: flex;
+            width: 1170px;
+            height: 490px;
+            
+            justify-content:space-between;
+            align-items: center;
+        }
+        .contact{
+            width: 400px;
+            height: 290px;
+        }
+        #peri{
+            color: #1966F3;
+        }
+        #my-te{
+            color: white;
+            font-size: 35px;
+            
+        }
+        #my-mail{
+            color: #BDBDBD;
+        }
+        .tel{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #mail{
+            padding: 10px 10px;
+            width: 310px;
+            background-color: #1C242F;
+            border: none;
+            font-size: 17px;
+            color: #BDBDBD;
+        }
+        #mail-btn{
+            padding: 10px;
+            font-size: 17px;
+            width: 80px;
+            background-color: #0A0F17;
+            color:#1966F3;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        #mail-btn:hover{
+            color: white;
+            background-color: #1966F3;
+        }
+        .contact{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        #ff{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        #last{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 459px;
+        }
+        .small-last{
+            color: white;
+            background-color: #11141B;
+            border: black 1px solid;
+            border-radius: 18px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        #ff{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            gap: 40px;
+            width: 1170px;
+        }
+        #fot-hr{
+            width: 100%;
+        }
+        #fot-info{
+            color: white;
+        }
+        #is-gi{
+            padding: 18px 54px;
+            background-color: #1966F3;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.15s;
+            font-size: larger;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #is-gi:hover{
+            background-color: #4E94F3;
+        }
+        .posts{
+            width: 770px;
+            height: 635px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #photos-posts{
+            width: 770px;
+            height: 385px;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        #post-info-about{
+            color: #224568;
+        }
+        #post-info-name{
+            font-size:x-large;
+            transition: all 0.15s;
+            cursor: pointer;
+        }
+        #post-info-name:hover{
+            color: #1966F3;
+        }
+        .post-info{
+            display: flex;
+            flex-direction: column;
+            padding: 10%;
+            gap: 20px;
+        }
+        #center{
+            width: 770px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .last-one{
+            display: flex;
+            gap: 10px;
+        }
+        .last-one hr{
+            border: rgb(98, 98, 98) 1px solid;
+        }
+        .last-one p{
+            cursor: pointer;
+            color: rgb(62, 62, 62);
+            transition: all 0.15s;
+        }
+        .last-one p:hover{
+            color: #1966F3;
+        }
+        .left-side{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .right-side{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 400px;
+            height: 2200px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            overflow: hidden;
+        }
+        .container{
+            margin-top: 200px;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        .div-right-1{
+            background-color: #FBF9FF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            width: 400px;
+            height: 185px;
+        }
+        .search{
+            display: flex;
+        }
+        .figure{
+            padding: 20px;
+            width: 270px;
+            height: 50px;
+            border: rgb(155, 155, 155) 1px solid;
+            color: rgb(155, 155, 155);
+        }
+        .figure:focus{
+            outline: none;
+        }
+        .search-btn{
+            color: white;
+            background-color: #1966F3;
+            padding: 10px;
+            width: 60px;
+        }
+        .main-search{
+            width: 330px;
+            height: 50px;
+            font-size: 17px;
+            color: #1966F3;
+            letter-spacing: 5px;
+            border: #1966F3 1px solid;
+            background-color: white;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .main-search:hover{
+            background-color: #1966F3;
+            border-color: white;
+            color: white;
+        }
+        .div-right-2{
+            background-color: #FBF9FF;
+            width: 400px;
+            height: 475px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .right-2-top{
+            margin-top: 25px;
+            margin-bottom: 45px;
+            width: 310px;
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #right-top-p{
+            font-size: 20px;
+        }
+        .right-2-bottom{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 310px;
+            height: 40px;
+        }
+        .category-divs{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .category-divs a{
+            color: black;
+            transition: all 0.15s;
+        }
+        .category-divs a:hover{
+            color: #1966F3;
+
+        }
+        .div-right-3{
+            width: 400px;
+            height: 520px;
+            background-color: #FBF9FF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .right-3-posts img{
+            width: 80px;
+            height: 80px;
+        }
+        .right-3-posts{
+            width: 310px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        #right-3-info-name{
+            transition: all 0.15s;
+            cursor: pointer;
+        }
+        #right-3-info-name:hover{
+            color: #1966F3;
+        }
+        #right-3-info-date{
+            font-size: 15px;
+        }
+        .right-3-info{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .right-3-bottom{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .div-right-4{
+            background-color: #FBF9FF;
+            width: 400px;
+            height: 255px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .right-4-top{
+            margin-top: 25px;
+            margin-bottom: 45px;
+            width: 310px;
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .right-2-bottom{
+            width: 310px;
+        }
+        .right-4-bottom-buttons{
+            width: 310px;
+        }
+        .hash{
+            height: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            background-color: white;
+            border: rgb(210, 210, 210) 1px solid;
+            color: rgb(141, 141, 141);
+            cursor: pointer;
+            transition: all 0.15s;
+            margin: 2px;
+        }
+        .hash:hover{
+            background-color: #1966F3;
+            border-color: #1966F3;
+            color: white;
+        }
+        .div-right-5{
+            background-color: #FBF9FF;
+            width: 400px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .right-5-top{
+            margin-top: 25px;
+            margin-bottom: 45px;
+            width: 310px;
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .photos-bottom-5{
+            width: 90px;
+            height: 90px;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .photos-bottom-5:hover{
+            width: 100px;
+            height: 100px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .insta-posts{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .photos-5{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        nav{
+            position:fixed;
+            top:0;
+            left:0; 
+            width:100%;
+        }
+        .div-right-6{
+            background-color: #FBF9FF;
+            width: 400px;
+            height: 270px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .right-6-top{
+            margin-top: 25px;
+            margin-bottom: 45px;
+            width: 310px;
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .right-6-bottom{
+            width: 310px;
+        }
+        .right-6-bottom-form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+        }
+        .last-input{
+            padding: 20px;
+            width: 100%;
+            height: 50px;
+            border: rgb(155, 155, 155) 1px solid;
+            color: rgb(155, 155, 155);
+        }
+        .last-input:focus{
+            outline: none;
+        }
+        .last-button{
+            width: 100%;
+            height: 50px;
+            font-size: 17px;
+            color: #1966F3;
+            letter-spacing: 5px;
+            border: #1966F3 1px solid;
+            background-color: white;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .last-button:hover{
+            background-color: #1966F3;
+            border-color: white;
+            color: white;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            gap: 100px;
+        }
+        .switch-bu{
+            width: 45px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            border: rgb(217, 217, 217) 1px solid;
+            background-color: white;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .switch-bu a{
+            color: rgb(108, 108, 108);
+        }
+        .switch-bu:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border:none;
+        }
+        .switch-buttons{
+            display: flex;
+            gap: 10px;
+        }
+        .switch{
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <p id="logo">Medical.</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Doctors.html">Doctors</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <button id="is-gi">
+                    <p class="button-main">Lulini</p>
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="left-side">
+                <div class="posts">
+                    <img id="photos-posts" src="images/posts1.png">
+                    <div id="center">
+                        <div class="post-info">
+                            <p id="post-info-name">Google incs pact for new 35-storey office</p>
+                            <p id="post-info-about">That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                            <div class="last-one">
+                                <div>
+                                    <p><i class="fa-solid fa-user"></i> Travel,Lifestyle</p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <p><i class="fa-solid fa-comments"></i> 03 Comments</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="posts">
+                    <img id="photos-posts" src="images/single_blog_2.png.webp">
+                    <div id="center">
+                        <div class="post-info">
+                            <p id="post-info-name">Google incs pact for new 35-storey office</p>
+                            <p id="post-info-about">That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                            <div class="last-one">
+                                <div>
+                                    <p><i class="fa-solid fa-user"></i> Travel,Lifestyle</p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <p><i class="fa-solid fa-comments"></i> 03 Comments</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="posts">
+                    <img id="photos-posts" src="images/single_blog_3.png.webp">
+                    <div id="center">
+                        <div class="post-info">
+                            <p id="post-info-name">Google incs pact for new 35-storey office</p>
+                            <p id="post-info-about">That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                            <div class="last-one">
+                                <div>
+                                    <p><i class="fa-solid fa-user"></i> Travel,Lifestyle</p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <p><i class="fa-solid fa-comments"></i> 03 Comments</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="posts">
+                    <img id="photos-posts" src="images/single_blog_4.png.webp">
+                    <div id="center">
+                        <div class="post-info">
+                            <p id="post-info-name">Google incs pact for new 35-storey office</p>
+                            <p id="post-info-about">That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                            <div class="last-one">
+                                <div>
+                                    <p><i class="fa-solid fa-user"></i> Travel,Lifestyle</p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <p><i class="fa-solid fa-comments"></i> 03 Comments</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="posts">
+                    <img id="photos-posts" src="images/single_blog_5.png.webp">
+                    <div id="center">
+                        <div class="post-info">
+                            <p id="post-info-name">Google incs pact for new 35-storey office</p>
+                            <p id="post-info-about">That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                            <div class="last-one">
+                                <div>
+                                    <p><i class="fa-solid fa-user"></i> Travel,Lifestyle</p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <p><i class="fa-solid fa-comments"></i> 03 Comments</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="div-right-1">
+                    <div class="search">
+                        <input class = "figure" type="text" placeholder="Search Keyword">
+                        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <button class="main-search">SEARCH</button>
+                </div>
+                <div class="div-right-2">
+                    <div class="right-2-top">
+                        <p id="right-top-p">Category</p>
+                        <hr>
+                    </div>
+                    <div class="right-2-bottom">
+                        <div class="category-divs">
+                            <a href="#">Resaurant food(37)</a>
+                            <hr>
+                        </div>
+                        <div class="category-divs">
+                            <a href="#">Travel news(10)</a>
+                            <hr>
+                        </div>
+                        <div class="category-divs">
+                            <a href="#">Modern technology(03)</a>
+                            <hr>
+                        </div>
+                        <div class="category-divs">
+                            <a href="#">Product(11)</a>
+                            <hr>
+                        </div>
+                        <div class="category-divs">
+                            <a href="#">Inspiration(21)</a>
+                            <hr>
+                        </div>
+                        <div class="category-divs">
+                            <a href="#">Health Care(09)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-right-3">
+                    <div class="right-2-top">
+                        <p id="right-top-p">Recent Post</p>
+                        <hr>
+                    </div>
+                    <div class="right-3-bottom">
+                        <div class="right-3-posts">
+                            <img src="images/post_1.png.webp">
+                            <div class="right-3-info">
+                                <a href = "#" id="right-3-info-name">From life was you fish...</a>
+                                <p id="right-3-info-date">January 12, 2019</p>
+                            </div>
+                        </div>
+                        <div class="right-3-posts">
+                            <img src="images/post_2.png.webp">
+                            <div class="right-3-info">
+                                <a href = "#" id="right-3-info-name">The Amazing Humble</a>
+                                <p id="right-3-info-date">02 Hours ago</p>
+                            </div>
+                        </div>
+                        <div class="right-3-posts">
+                            <img src="images/post_3.png.webp">
+                            <div class="right-3-info">
+                                <a href = "#" id="right-3-info-name">Astronomy Or Astrology</a>
+                                <p id="right-3-info-date">03 Hours ago</p>
+                            </div>
+                        </div>
+                        <div class="right-3-posts">
+                            <img src="images/post_4.png.webp">
+                            <div class="right-3-info">
+                                <a href = "#" id="right-3-info-name">Asteroids Telescope</a>
+                                <p id="right-3-info-date">01 Hours ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-right-4">
+                    <div class="right-4-top">
+                        <p id="right-top-p">Tag Clouds</p>
+                        <hr>
+                    </div>
+                    <div class="right-4-bottom">
+                        <div class="right-4-bottom-buttons">
+                            <button class="hash">project</button>
+                            <button class="hash">love</button>
+                            <button class="hash">technology</button>
+                            <button class="hash">travel</button>
+                            <button class="hash">restaurant</button>
+                            <button class="hash">lifestyle</button>
+                            <button class="hash">design</button>
+                            <button class="hash">illustration</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-right-5">
+                    <div class="right-5-top">
+                        <p id="right-top-p">Instagram Feeds</p>
+                        <hr>
+                    </div>
+                    <div class="right-5-bottom">
+                        <div class="photos-5">
+                            <div class="insta-posts">
+                                <img src="images/insta_1.png" class="photos-bottom-5">
+                                <img src="images/insta_2.png" class="photos-bottom-5">
+                                <img src="images/insta_3.png" class="photos-bottom-5">
+                            </div>
+                            <div class="insta-posts">
+                                <img src="images/insta_4.png" class="photos-bottom-5">
+                                <img src="images/insta_5.png" class="photos-bottom-5">
+                                <img src="images/insta_6.png" class="photos-bottom-5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-right-6">
+                    <div class="right-6-top">
+                        <p id="right-top-p">Instagram Feeds</p>
+                        <hr>
+                    </div>
+                    <div class="right-6-bottom">
+                        <div class="right-6-bottom-form">
+                            <input class = "last-input" type="email" placeholder="Enter email">
+                            <button class="last-button">SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="switch">
+            <div class="switch-buttons">
+                <button class="switch-bu"><a href="#"><i class="fa-solid fa-arrow-left"></i></a></button>
+                <button class="switch-bu"><a href="#">1</a></button>
+                <button class="switch-bu"><a href="#">2</a></button>
+                <button class="switch-bu"><a href="#"><i class="fa-solid fa-arrow-right"></i></a></button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="fm">
+            <div class="fm-flex">
+                <div class="logo">
+                    <img src="images/logo2_footer.png" width="190px" height="50px">
+                </div>
+                <div class="about">
+                    <p id="kk">ABOUT US</p>
+                    <p>Lorem igpsum doldfor sit amet,<br>adipiscing elit, sed do eiusmod<br>tempor cergelit rgh.</p>
+                    <p>Lorem ipsum dolor sit amet,<br>adipiscing elit.</p>
+                </div>
+                <div class="contact">
+                    <div class="tel">
+                        <p id="my-te">+995 <span id="peri">555 277 335</span></p>
+                        <p id="my-mail">lcxvaradze400@gmail.com</p>
+                    </div>
+                    <div class="formi">
+                        <input type="email" id="mail" placeholder="Your email addres">
+                        <button id="mail-btn">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ff">
+            <hr id="fot-hr">
+            <div id="last">
+                <p id="fot-info">Copyright ©2023 All rights reserved | This template is made with  by Lulini</p>
+                <div>
+                    <button class="small-last"><i class="fa-brands fa-twitter"></i></button>
+                    <button class="small-last"><i class="fa-solid fa-globe"></i></button>
+                    <button class="small-last"><i class="fa-brands fa-facebook-f"></i></button>
+                    <button class="small-last"><i class="fa-brands fa-pinterest-p"></i></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

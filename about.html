@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <title>Medical</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@100;200;300&display=swap');
+        hr{
+            width: 90px;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 2px;
+            border-color: #1966F3;
+        }
+        button{
+            border: none;
+        }
+        .succes{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .succes p{
+            color: #1966F3;
+            font-weight: 700;
+        }
+        .succes p, hr{
+            display: inline-block;
+        }
+        div h1{
+            font-size: 60px;
+            margin-bottom: 40px;
+        }
+        #p-content{
+            font-size: 17px;
+            margin-bottom: 40px;
+        }
+        main{
+            position: absolute;
+            display: flex;
+            gap: 100px;
+            margin-left: 320px;
+            margin-top: 90px;
+        }
+        #img1{
+            width: 550px;
+            height: 610px;
+            background-image: url("images/about2.png.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: white 10px solid;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #img2{
+            position: relative;
+            width: 380px;
+            height: 610px;
+            background-image: url("images/about1.png.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: white 10px solid;
+            right: 35%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-top: 100px;
+            
+        }
+        #imag{
+            display: flex;
+        }
+        .down-bt{
+            border: none;
+            padding: 18px 54px;
+            width: 240px;
+            background-color: #1966F3;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.15s;
+            font-size: larger;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .down-bt:hover{
+            background-color: #4E94F3;
+        }
+        #buttons{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .button-main{
+            border: none;
+            padding: 18px 54px;
+            background-color: #1966F3;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.15s;
+            font-size: larger;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .button-main:hover{
+            background-color: #4E94F3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <p id="logo">Medical.</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Doctors.html">Doctors</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <button>
+                    <p class="button-main">Lulini</p>
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="main">
+            <div class="main1">
+                <div class="succes">
+                    <hr>
+                    <p>ABOUT OUR COMPANY</p>
+                </div>
+                <h1>Welcome To Our<br>Hospital</h1>
+                <p id="p-content">There arge many variations ohf pacgssages of sorem gpsum ilable,<br>but the majority have suffered alteration in some form, by ected<br>humour, or randomised words whi.</p>
+                <div id="buttons">
+                    <button class="down-bt">Appoitment</button>
+                    <button class="down-bt" style="background-color: #878998;">Find Doctors</button>
+                    <button class="down-bt" style="background-color: #878998;">Emargency</button>
+                </div>
+            </div>
+        </div>
+        <div id="imag">
+            <div id="img1">  
+            </div>
+            <div id="img2">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

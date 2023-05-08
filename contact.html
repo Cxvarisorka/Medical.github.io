@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <script src="https://kit.fontawesome.com/ddac99b4fd.js" crossorigin="anonymous"></script>
+    <title>Contactt</title>
+    <style>
+        button{
+            border: none;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            background-color: #11141B;
+            width: 100%;
+            height: 600px;
+        }
+        #specc{
+            font-size: 40px;
+            font-weight: 700;
+        }
+        #medi{
+            font-size: 35px;
+            font-weight: 500;
+            margin-left: 100px;
+            display: inline-block;
+            cursor: pointer;
+            font-weight: 700;
+            transition: all 0.15s;
+            color: white;
+        }
+        #medi:hover{
+            color: #1966F3;
+        }
+        .logo,.about{
+            width: 300px;
+            height: 290px;
+        }
+        .about{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            line-height: 30px;
+        }
+        .about p{
+            color: #BDBDBD;
+        }
+        #kk{
+            color: white;
+        }
+        #fm{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .fm-flex{
+            display: flex;
+            width: 1170px;
+            height: 490px;
+            
+            justify-content:space-between;
+            align-items: center;
+        }
+        .contact{
+            width: 400px;
+            height: 290px;
+        }
+        #peri{
+            color: #1966F3;
+        }
+        #my-te{
+            color: white;
+            font-size: 35px;
+            
+        }
+        #my-mail{
+            color: #BDBDBD;
+        }
+        .tel{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #mail{
+            padding: 10px 10px;
+            width: 310px;
+            background-color: #1C242F;
+            border: none;
+            font-size: 17px;
+            color: #BDBDBD;
+        }
+        #mail-btn{
+            padding: 10px;
+            font-size: 17px;
+            width: 80px;
+            background-color: #0A0F17;
+            color:#1966F3;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        #mail-btn:hover{
+            color: white;
+            background-color: #1966F3;
+        }
+        .contact{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        #ff{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        #last{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 459px;
+        }
+        .small-last{
+            color: white;
+            background-color: #11141B;
+            border: black 1px solid;
+            border-radius: 18px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        #ff{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            gap: 40px;
+            width: 1170px;
+        }
+        #fot-hr{
+            width: 100%;
+        }
+        #fot-info{
+            color: white;
+        }
+        #is-gi{
+            padding: 18px 54px;
+            background-color: #1966F3;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.15s;
+            font-size: larger;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #is-gi:hover{
+            background-color: #4E94F3;
+        }
+        main{
+            width: 1170px;
+            height: 540px;
+            display: flex;
+            gap: 100px;
+            justify-content: space-between;
+
+        }
+        .main-contact{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .txt-area{
+            border: rgb(209, 207, 207) 1px solid;
+            padding: 10px;
+            width: 770px;
+            height: 190px;
+            color: gray;
+        }
+        .txt-area:focus{
+            outline: none;
+        }
+        .person-info{
+            display: flex;
+            gap: 30px;
+        }
+        .person-form{
+            width: 370px;
+            height: 48px;
+            padding: 10px;
+            border: rgb(209, 207, 207) 1px solid;
+            color: gray;
+        }
+        .person-form:focus{
+            outline:none;
+        }
+        #touch{
+            font-size: 25px;
+        }
+        .subject-area{
+            width: 770px;
+            height: 48px;
+            border: rgb(209, 207, 207) 1px solid;
+            color: gray;
+        }
+        .subject-area:focus{
+            outline: none;
+        }
+        #send-it{
+            color: #1966F3;
+            border: #1966F3 1px solid;
+            letter-spacing: 10px;
+            font-size: 20px;
+            height: 48px;
+            background-color: white;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        #send-it:hover{
+            color: white;
+            background-color: #1966F3;
+        }
+        #nav-1{
+            height: 600px;
+            width: 1170px;
+            background-image: url("images/75148b8032f2ced2420aec1a7558bbe1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display: flex;
+            justify-content: center;
+        }
+    
+        nav{
+            width:100%;
+        }
+        .right-div-1{
+            display: flex;
+            gap: 10px;
+        }
+        .main-main{
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+        .right-div-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .fa-house , .fa-phone , .fa-envelope{
+            color: gray;
+            scale: 1.6;
+        }
+        .about-loc{
+            color: gray;
+            font-size: 15px;
+        }
+        .right-side{
+            align-items:flex-start;
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <p id="logo">Medical.</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Doctors.html">Doctors</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <button id="is-gi">
+                    <p class="button-main">Lulini</p>
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <div class="main-main">
+        <div id="nav-1">
+        </div>
+        <main>
+            <div class="left-side">
+                <div class="main-contact">
+                    <p id="touch">Get in Touch</p>
+                    <textarea class="txt-area" placeholder="Enter Message"></textarea>
+                    <div class="person-info">
+                        <input type="text" class="person-form" placeholder="Enter your name">
+                        <input type="email" class="person-form" placeholder="Enter email address">
+                    </div>
+                    <input type="text" class="subject-area" placeholder="Enter Subject">
+                    <button id="send-it">SEND</button>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="right-div-1">
+                    <div class="icons"><a href="#"><i class="fa-solid fa-house"></i></a></div>
+                    <div class="infos">
+                        <p class="location">Buttonwood, California.</p>
+                        <p class="about-loc">Rosemead, CA 91770</p>
+                    </div>
+                </div>
+                <div class="right-div-1">
+                    <div class="icons"><a href="#"><i class="fa-solid fa-phone"></i></a></div>
+                    <div class="infos">
+                        <p class="location">+1 253 565 2365</p>
+                        <p class="about-loc">Mon to Fri 9am to 6pm</p>
+                    </div>
+                </div>
+                <div class="right-div-1">
+                    <div class="icons"><a href="#"><i class="fa-solid fa-envelope"></i></a></div>
+                    <div class="infos">
+                        <p class="location">support@colorlib.com</p>
+                        <p class="about-loc">Send us your query anytime!</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div id="fm">
+            <div class="fm-flex">
+                <div class="logo">
+                    <img src="images/logo2_footer.png" width="190px" height="50px">
+                </div>
+                <div class="about">
+                    <p id="kk">ABOUT US</p>
+                    <p>Lorem igpsum doldfor sit amet,<br>adipiscing elit, sed do eiusmod<br>tempor cergelit rgh.</p>
+                    <p>Lorem ipsum dolor sit amet,<br>adipiscing elit.</p>
+                </div>
+                <div class="contact">
+                    <div class="tel">
+                        <p id="my-te">+995 <span id="peri">555 277 335</span></p>
+                        <p id="my-mail">lcxvaradze400@gmail.com</p>
+                    </div>
+                    <div class="formi">
+                        <input type="email" id="mail" placeholder="Your email addres">
+                        <button id="mail-btn">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ff">
+            <hr id="fot-hr">
+            <div id="last">
+                <p id="fot-info">Copyright ©2023 All rights reserved | This template is made with  by Lulini</p>
+                <div>
+                    <button class="small-last"><i class="fa-brands fa-twitter"></i></button>
+                    <button class="small-last"><i class="fa-solid fa-globe"></i></button>
+                    <button class="small-last"><i class="fa-brands fa-facebook-f"></i></button>
+                    <button class="small-last"><i class="fa-brands fa-pinterest-p"></i></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

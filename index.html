@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@100;200;300&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter';
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("images/hopsital_hero.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #logo{
+            font-size: 35px;
+            font-weight: 500;
+            margin-left: 100px;
+            display: inline-block;
+            cursor: pointer;
+            font-weight: 700;
+            transition: all 0.15s;
+        }
+        #logo:hover{
+            color: #1966F3;
+        }
+        nav ul li{
+            list-style-type: none;
+            display: inline-block;
+            font-size: 20px;
+            margin-left: 60px;
+        }
+        nav ul{
+            position: absolute;
+            display: inline-block;
+            right: 10%;
+        }
+        nav ul li a{
+            color: black;
+            transition: all 0.15s;
+        }
+        nav ul li a:hover{
+            color: blue;
+        }
+        button{
+            padding: 18px 54px;
+            background-color: #1966F3;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.15s;
+            font-size: larger;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        button:hover{
+            background-color: #4E94F3;
+        }
+        hr{
+            width: 90px;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 2px;
+            border-color: #1966F3;
+        }
+        .succes{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .succes p{
+            color: #1966F3;
+            font-weight: 700;
+        }
+        .succes p, hr{
+            display: inline-block;
+        }
+        div h1{
+            font-size: 60px;
+            margin-bottom: 40px;
+        }
+        #p-content{
+            font-size: 17px;
+            margin-bottom: 40px;
+        }
+        .main{
+            position: absolute;
+            top: 55%;
+            left: 31%;
+            transform: translate(-50% , -50%);
+            background-color: white;
+            border-top-right-radius: 18px;
+            border-bottom-left-radius: 18px;
+            overflow: hidden;
+            padding: 20px;
+            height: 600px;
+            transition: all 0.15s;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset, rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .main1{
+            margin: 50px;
+            margin-top: 110px;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <p id="logo">Medical</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Doctors.html">Doctors</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <button>
+                    <p id="button">Lulini</p>
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="main1">
+        <div class="succes">
+            <hr>
+            <p>COMMITTED TO SUCCES</p>
+        </div>
+        <h1>WE CARE ABOUT<br>YOUR HEALTH</h1>
+        <p id="p-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Obcaecati nobis exercitationem, perspiciatis sequi incidunt consequuntur? Impedit, eligendi.</p>
+        <button>Appoitment</button>
+    </div>
+    </div>
+</body>
+</html>

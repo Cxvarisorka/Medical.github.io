@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <script src="https://kit.fontawesome.com/ddac99b4fd.js" crossorigin="anonymous"></script>
+    <title>Medical</title>
+    <style>
+        button{
+            border: none;
+        }
+        #okay{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 150px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        #okay:hover{
+            background-color: #1966F3;
+            color: white;
+        }
+        hr{
+            width: 500px;
+            border-width: 3px;
+            border-style: solid;
+            border-radius: 2px;
+            border-color: #1966F3;
+
+        }
+        .top{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .top p{
+            font-size: 40px;
+            
+        }
+        .pro{
+            width: 370px;
+            height: 630px;
+            border: rgb(206, 206, 206) 1px solid;
+            overflow: hidden;
+            transition: all 0.25s;
+            cursor: pointer;
+        }
+        .image{
+            width: 370px;
+            height: 490px;
+            background-image: url("images/person1.webp");
+            background-repeat: no-repeat;
+            background-size: contain;
+            transition: all 0.25s;
+        }
+        .image1{
+            width: 370px;
+            height: 490px;
+            background-image: url("images/person2.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            transition: all 0.25s;
+        }
+        .image2{
+            width: 370px;
+            height: 490px;
+            background-image: url("images/team1.png.webp");
+            background-repeat: no-repeat;
+            background-size: contain;
+            transition: all 0.25s;
+        }
+        #name{
+            font-size: 30px;
+        }
+       
+        .small{
+            padding: 0;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px gray solid;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        .button-main{
+            padding: 18px 54px;
+            background-color: #1966F3;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.15s;
+            font-size: larger;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .button-main:hover{
+            background-color: #4E94F3;
+        }
+        .buttons{
+            display: flex;
+            gap: 15px;
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.15s;
+        }
+        .pro:hover{
+            color: white;
+            background-color: #1966F3;
+        }
+        .profiles{
+            display: flex;
+            gap: 30px;
+            
+        }
+        .main{
+            margin-top: 150px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 200px;
+            background-color: #11141B;
+            width: 100%;
+            height: 600px;
+        }
+        #specc{
+            font-size: 40px;
+            font-weight: 700;
+        }
+        #medi{
+            font-size: 35px;
+            font-weight: 500;
+            margin-left: 100px;
+            display: inline-block;
+            cursor: pointer;
+            font-weight: 700;
+            transition: all 0.15s;
+            color: white;
+        }
+        #medi:hover{
+            color: #1966F3;
+        }
+        .logo,.about{
+            width: 300px;
+            height: 290px;
+        }
+        .about{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            line-height: 30px;
+        }
+        .about p{
+            color: #BDBDBD;
+        }
+        #kk{
+            color: white;
+        }
+        #fm{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .fm-flex{
+            display: flex;
+            width: 1170px;
+            height: 490px;
+            
+            justify-content:space-between;
+            align-items: center;
+        }
+        .contact{
+            width: 400px;
+            height: 290px;
+        }
+        #peri{
+            color: #1966F3;
+        }
+        #my-te{
+            color: white;
+            font-size: 35px;
+            
+        }
+        #my-mail{
+            color: #BDBDBD;
+        }
+        .tel{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #mail{
+            padding: 10px 10px;
+            width: 310px;
+            background-color: #1C242F;
+            border: none;
+            font-size: 17px;
+            color: #BDBDBD;
+        }
+        #mail-btn{
+            padding: 10px;
+            font-size: 17px;
+            width: 80px;
+            background-color: #0A0F17;
+            color:#1966F3;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        #mail-btn:hover{
+            color: white;
+            background-color: #1966F3;
+        }
+        .contact{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        #ff{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        #last{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 459px;
+        }
+        .small-last{
+            color: white;
+            background-color: #11141B;
+            border: black 1px solid;
+            border-radius: 18px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        #ff{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            gap: 40px;
+            width: 1170px;
+        }
+        #fot-hr{
+            width: 100%;
+        }
+        #fot-info{
+            color: white;
+        }
+        nav{
+            position:fixed;
+            top:0;
+            left:0; 
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <p id="logo">Medical.</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Doctors.html">Doctors</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <button>
+                    <p class="button-main">Lulini</p>
+                </button>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="main">
+        <p id="specc">OUR SPECIALIST</p>
+        <hr>
+        <div class="profiles">
+            <div class="pro">
+                <div class="image">
+                </div>
+                <div class="info">
+                    <p id="name">Alvin Maxwell</p>
+                    <p id="field">Creative UI Designer</p>
+                    <div class="buttons">
+                        <button class="small"><i class="fa-brands fa-twitter"></i></button>
+                        <button class="small"><i class="fa-solid fa-globe"></i></button>
+                        <button class="small"><i class="fa-brands fa-facebook-f"></i></button>
+                        <button class="small"><i class="fa-brands fa-pinterest-p"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="pro">
+                <div class="image1">
+                </div>
+                <div class="info">
+                    <p id="name">Alvin Maxwell</p>
+                    <p id="field">Creative UI Designer</p>
+                    <div class="buttons">
+                        <button class="small"><i class="fa-brands fa-twitter"></i></button>
+                        <button class="small"><i class="fa-solid fa-globe"></i></button>
+                        <button class="small"><i class="fa-brands fa-facebook-f"></i></button>
+                        <button class="small"><i class="fa-brands fa-pinterest-p"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="pro">
+                <div class="image2">
+                </div>
+                <div class="info">
+                    <p id="name">Alvin Maxwell</p>
+                    <p id="field">Creative UI Designer</p>
+                    <div class="buttons">
+                        <button class="small"><i class="fa-brands fa-twitter"></i></button>
+                        <button class="small"><i class="fa-solid fa-globe"></i></button>
+                        <button class="small"><i class="fa-brands fa-facebook-f"></i></button>
+                        <button class="small"><i class="fa-brands fa-pinterest-p"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="profiles">
+            <div class="pro">
+                <div class="image">
+                </div>
+                <div class="info">
+                    <p id="name">Alvin Maxwell</p>
+                    <p id="field">Creative UI Designer</p>
+                    <div class="buttons">
+                        <button class="small"><i class="fa-brands fa-twitter"></i></button>
+                        <button class="small"><i class="fa-solid fa-globe"></i></button>
+                        <button class="small"><i class="fa-brands fa-facebook-f"></i></button>
+                        <button class="small"><i class="fa-brands fa-pinterest-p"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="pro">
+                <div class="image1">
+                </div>
+                <div class="info">
+                    <p id="name">Alvin Maxwell</p>
+                    <p id="field">Creative UI Designer</p>
+                    <div class="buttons">
+                        <button class="small"><i class="fa-brands fa-twitter"></i></button>
+                        <button class="small"><i class="fa-solid fa-globe"></i></button>
+                        <button class="small"><i class="fa-brands fa-facebook-f"></i></button>
+                        <button class="small"><i class="fa-brands fa-pinterest-p"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="pro">
+                <div class="image2">
+                </div>
+                <div class="info">
+                    <p id="name">Alvin Maxwell</p>
+                    <p id="field">Creative UI Designer</p>
+                    <div class="buttons">
+                        <button class="small"><i class="fa-brands fa-twitter"></i></button>
+                        <button class="small"><i class="fa-solid fa-globe"></i></button>
+                        <button class="small"><i class="fa-brands fa-facebook-f"></i></button>
+                        <button class="small"><i class="fa-brands fa-pinterest-p"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    
+    <footer>
+        <div id="fm">
+            <div class="fm-flex">
+                <div class="logo">
+                    <img src="images/logo2_footer.png" width="190px" height="50px">
+                </div>
+                <div class="about">
+                    <p id="kk">ABOUT US</p>
+                    <p>Lorem igpsum doldfor sit amet,<br>adipiscing elit, sed do eiusmod<br>tempor cergelit rgh.</p>
+                    <p>Lorem ipsum dolor sit amet,<br>adipiscing elit.</p>
+                </div>
+                <div class="contact">
+                    <div class="tel">
+                        <p id="my-te">+995 <span id="peri">555 277 335</span></p>
+                        <p id="my-mail">lcxvaradze400@gmail.com</p>
+                    </div>
+                    <div class="formi">
+                        <input type="email" id="mail" placeholder="Your email addres">
+                        <button id="mail-btn">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ff">
+            <hr id="fot-hr">
+            <div id="last">
+                <p id="fot-info">Copyright ©2023 All rights reserved | This template is made with  by Lulini</p>
+                <div>
+                    <button class="small-last"><i class="fa-brands fa-twitter"></i></button>
+                    <button class="small-last"><i class="fa-solid fa-globe"></i></button>
+                    <button class="small-last"><i class="fa-brands fa-facebook-f"></i></button>
+                    <button class="small-last"><i class="fa-brands fa-pinterest-p"></i></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
